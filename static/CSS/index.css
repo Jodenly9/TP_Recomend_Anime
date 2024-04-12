@@ -1,0 +1,50 @@
+:root{
+    --color-primario: #f0cfff;
+    --color-fondo-header: var(--color-primario);
+    --color-texto-header: white;
+    --color-azul-body: rgba(0, 139, 191, 1); 
+    --color-gris-body: rgba(255, 255, 255, 0.4);
+    --color-logo-sombra: rgba(83, 175, 236, 0.5);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, var(--color-azul-body),var(--color-gris-body), var(--color-azul-body));
+    background-image: url(../Img/AnimeChicaFondoPlaneta.png);
+    background-size: cover; /* Ajuste la imagen al contenerdor*/
+    background-position: center;
+}
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    background-image: url('../Img/AnimeChicaFondoPlaneta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    background-clip: text; /* (Fonde de Letras)la bandera Dentro de las Letras*/
+    margin: 20px;
+    /* height: 50vh; */
+}
+.contenido{ /*Clase*/
+    /* margin: 0 auto; sup inf 0 costados autoajuste */
+    padding: 20px;
+    text-align: center;
+}
+#bloque-1{
+    text-align: justify;
+    margin: 30px;
+    height: 20vh;
+}
+#p-bloque3{
+    text-align: justify;
+    margin: 30px;
+}
+footer{
+    background-color: var(--color-fondo-header);
+    color: var(--color-texto-header);
+    text-align: center;
+    padding: 20px;
+}
