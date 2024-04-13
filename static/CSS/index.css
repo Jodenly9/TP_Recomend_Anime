@@ -17,6 +17,33 @@ body{
     background-size: cover; /* Ajuste la imagen al contenerdor*/
     background-position: center;
 }
+/*Encabezado*/
+.header{grid-area: header;}
+/*Principal*/
+.main {grid-area: main;}
+/*buscador*/
+.buscador {grid-area: buscador;}
+/*informacion*/
+.info {grid-area: info;}
+/*Pie*/
+.footer {grid-area: footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        /*6 columnas y 4 filas*/
+        'header header header header header header'
+        'main main main main main buscador'
+        'info info info info info buscador'
+        'footer footer footer footer footer buscador';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    padding: 10px 3px;
+}
+
 .titulo{
     font-size: 50px;
     text-align: center;

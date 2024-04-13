@@ -15,7 +15,7 @@ del encabezado al centro. */
 header{
     background-color: var(--color-fondo-header);
     color:var(--color-texto-header);
-    text-align:center;
+    text-align:left;
     position: fixed;
     top: 0;
     width: 100%;
@@ -30,7 +30,7 @@ separar el logo del menú especificando margen a la derecha.
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-right: 400px;
+    margin-right: 100px;
 }
 
 /* 6. Seleccionar del header el menu y la división para 

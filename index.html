@@ -7,70 +7,87 @@
     <link rel="stylesheet" href="static/CSS/header.css">
     <title>Inicio</title>
 </head>
+        <!-- Reemplazar el contenido del Body a Grid  -->
 <body>
-            <!-- Reemplazar el contenido del Body a Grid  -->
-    <!-- Encabezado -->
-    <header>
-        <div class="en-linea">
-            <img id="logo" src="static/Img/32529151_x19.jpg" alt="logo">
+    <div class="grid-container">
+        <div class="header">
+            <div class="en-linea">
+                <img id="logo" src="static/Img/32529151_x19.jpg" alt="logo">
+            </div>
+            <!-- Menú Navegación -->
+            <nav class="en-linea">
+                <a class="hipervinc" href="index.html">Inicio</a>
+                <a class="hipervinc" href="templates/anime.html">Animes</a>
+                <a class="hipervinc" href="templates/musica.html">Música</a>
+            </nav>
         </div>
-        <!-- Menú Navegación -->
-        <nav class="en-linea">
-            <a class="hipervinc" href="index.html">Inicio</a>
-            <a class="hipervinc" href="templates/anime.html">Animes</a>
-            <a class="hipervinc" href="templates/musica.html">Música</a>
-        </nav>
+
+        <div class="main">
+            <section id="bloque-1">
+                <h1 class="titulo">Recomendaciones de Anime y Música</h1>
+            </section>
+            
+            <section id="bloque-3">
+                <h3 id="p-bloque3">Más Recomendados o algo parecido</h3>
+                <h4 id="p-bloque3">Una serie de imagenes de recomendados y su titulo arriba</h4>
+            </section>
+    
+            <section id="galeria-s1">
+    
+                <div class="card">
+                    <img class="imagen-responsive" src="..//static/Img/Josuke1.png" alt="Foto Esquel">
+                    <h3>Titulo Anime/Manga de Ejemplo</h3>
+                    <p>Descripción: breve del Anime/Manga</p>
+                    <p>Link de la Página/Sitio que contiene el Manga/Anime</p>
+                    <!-- <a href=""></a> -->
+                   
+                </div>
+            </section>
+            
+            <section id="bloque-3">
+                <h3 id="p-bloque3">Ultimos Animes/Mangas Recomendados Actualizadas</h3>
+                <h4 id="p-bloque3">Una serie de imagenes de recomendados y su titulo arriba</h4>
+            </section>
+        </div>
+
+        <div class="buscador">
+            <section id="buscador">
+                <h3>Buscar</h3>
+            </section>
+
+        </div>
+
+        <div class="info">
+            <section id="bloque-3">
+                <h3 id="p-bloque3">¡Sean Bievenidos a (Nombre Página)!. Izquierdo</h3>
+                <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página .Descripción</p>
+                <p id="p-bloque3">Nuestra meta es que puedas encontrar todos los Mangas y Animes disponibles en internet para que te sean más fáciles de encontrar. También te recomendamos música relacionada</p>
+            </section>
+    
+            <section id="bloque-3">
+                <h3 id="p-bloque3">¿Qué es un manga?. Medio</h3>
+                <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página</p>
+                <p id="p-bloque3">Explicacón</p>
+            </section>
+    
+            <section id="bloque-3">
+                <h3 id="p-bloque3">¿Diferencia entre manga, mahua y manwhua?. Derecho</h3>
+                <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página</p>
+                <p id="p-bloque3">Explicación</p>
+            </section>
+        </div>
+
+        <div class="footer">
+            <h3>Info interesante footer ejemplo anime</h3>
+        </div>
+    <!-- <header>
     </header>
 
     <main>
-        <section id="bloque-1">
-            <h1 class="titulo">Recomendaciones de Anime y Música</h1>
-        </section>
-        
-        <section id="bloque-3">
-            <h3 id="p-bloque3">Más Recomendados o algo parecido</h3>
-            <h4 id="p-bloque3">Una serie de imagenes de recomendados y su titulo arriba</h4>
-        </section>
-
-        <section id="galeria-s1">
-
-            <div class="card">
-                <img class="imagen-responsive" src="..//static/Img/Josuke1.png" alt="Foto Esquel">
-                <h3>Titulo Anime/Manga de Ejemplo</h3>
-                <p>Descripción: breve del Anime/Manga</p>
-                <p>Link de la Página/Sitio que contiene el Manga/Anime</p>
-                <!-- <a href=""></a> -->
-               
-            </div>
-        </section>
-        
-        <section id="bloque-3">
-            <h3 id="p-bloque3">Ultimos Animes/Mangas Recomendados Actualizadas</h3>
-            <h4 id="p-bloque3">Una serie de imagenes de recomendados y su titulo arriba</h4>
-        </section>
-
-        <section id="bloque-3">
-            <h3 id="p-bloque3">¡Sean Bievenidos a (Nombre Página)!. Izquierdo</h3>
-            <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página .Descripción</p>
-            <p id="p-bloque3">Nuestra meta es que puedas encontrar todos los Mangas y Animes disponibles en internet para que te sean más fáciles de encontrar. También te recomendamos música relacionada</p>
-        </section>
-
-        <section id="bloque-3">
-            <h3 id="p-bloque3">¿Qué es un manga?. Medio</h3>
-            <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página</p>
-            <p id="p-bloque3">Explicacón</p>
-        </section>
-
-        <section id="bloque-3">
-            <h3 id="p-bloque3">¿Diferencia entre manga, mahua y manwhua?. Derecho</h3>
-            <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página</p>
-            <p id="p-bloque3">Explicación</p>
-        </section>
     </main>
 
-    <!-- Pie de Página -->
     <footer>
-        <h3>Info interesante footer ejemplo anime</h3>
-    </footer>
+    </footer> -->
+    </div>
 </body>
 </html>
