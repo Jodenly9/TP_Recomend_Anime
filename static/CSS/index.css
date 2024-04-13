@@ -1,5 +1,5 @@
 :root{
-    --color-primario: #f0cfff;
+    --color-primario: #000000;
     --color-fondo-header: var(--color-primario);
     --color-texto-header: white;
     --color-azul-body: rgba(0, 139, 191, 1); 
@@ -37,6 +37,26 @@ body{
     text-align: justify;
     margin: 30px;
     height: 20vh;
+}
+#galeria-s1{
+    position: relative;
+    left: 10vw;
+    /* z-index: -1; Envia la sección detrás del encabezado */
+}
+.card{
+    display:inline-block;
+    background-color: rgba(224, 243, 237, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.6);
+    text-align: center;
+    border-radius: 1%;
+    overflow: hidden;
+}
+.imagen-responsive{
+    height: auto;
+    max-width: 100%;
+    display: block;
 }
 #p-bloque3{
     text-align: justify;

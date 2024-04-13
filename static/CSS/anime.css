@@ -116,9 +116,9 @@ h1{
     animation-iteration-count: infinite;
 }
 @keyframes cambiar {
-    0%{background-image: url('../Img/bandera.jpg');}
+    0%{background-image: url('../Img/Jodenly9-O-O-Sorpresa1.png');}
     25%{background-image: url('../Img/AnimeChicaFondoPlaneta.png');}
-    50%{background-image: url('../Img/personas-perro-coche.jpg');}
-    75%{background-image: url('../Img/bandera.jpg');}
-    100%{background-image: url('../Img/AnimeChicaFondoPlaneta.png');}
+    50%{background-image: url('../Img/Josuke1.png');}
+    75%{background-image: url('../Img/AnimeChicaFondoPlaneta.png');}
+    100%{background-image: url('../Img/Jodenly9-O-O-Sorpresa1.png');}
 }
