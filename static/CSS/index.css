@@ -43,6 +43,34 @@ body{
 .grid-container > div {
     padding: 10px 3px;
 }
+.grid-container .header{
+    background-color: var(--color-fondo-header);
+    color:var(--color-texto-header);
+    grid-area: header;
+    text-align:left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.en-linea{
+    display: inline;
+    vertical-align: middle;
+}
+.hipervinc{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-texto-header);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 2em;
+}
+
+.grid-container .header{
+    grid-area: main;
+}
+
+
+
 
 .titulo{
     font-size: 50px;
@@ -55,12 +83,13 @@ body{
     margin: 20px;
     /* height: 50vh; */
 }
-.contenido{ /*Clase*/
+/*.contenido{ /*Clase*/
     /* margin: 0 auto; sup inf 0 costados autoajuste */
-    padding: 20px;
+    /*padding: 20px;
     text-align: center;
-}
-#bloque-1{
+}*/
+.gird-container #bloque-1{
+    grid-area: bloque-1;
     text-align: justify;
     margin: 30px;
     height: 20vh;
