@@ -1,0 +1,29 @@
+
+/*.footer {grid-area: footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        6 columnas y 3 filas
+        'footer footer footer footer footer footer';
+}
+*/
+.footer{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: rgb(255, 190, 255);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.footer div{
+    padding: 10px;
+}
+
+@media screen and (max-width: 450px) {
+    .footer{
+        grid-template-columns: 1fr;
+    }
+}

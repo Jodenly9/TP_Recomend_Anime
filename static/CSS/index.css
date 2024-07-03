@@ -1,126 +1,221 @@
-:root{
-    --color-primario: #000000;
-    --color-fondo-header: var(--color-primario);
-    --color-texto-header: white;
-    --color-azul-body: rgba(0, 139, 191, 1); 
-    --color-gris-body: rgba(255, 255, 255, 0.4);
-    --color-logo-sombra: rgba(83, 175, 236, 0.5);
-}
 *{
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
 }
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, var(--color-azul-body),var(--color-gris-body), var(--color-azul-body));
-    background-image: url(../Img/AnimeChicaFondoPlaneta.png);
-    background-size: cover; /* Ajuste la imagen al contenerdor*/
-    background-position: center;
+    font-family: "alkatra";
+    background-color:var(--body-color);
 }
-/*Encabezado*/
-.header{grid-area: header;}
+
 /*Principal*/
 .main {grid-area: main;}
 /*buscador*/
 .buscador {grid-area: buscador;}
 /*informacion*/
-.info {grid-area: info;}
+#info {grid-area: info;}
 /*Pie*/
 .footer {grid-area: footer;}
-
+/* 
+.espaciador{grid-area: espaciador;}
+.posicionador{grid-area: reel;}
+.contenido{grid-area: contenido;} */
+  
 .grid-container {
     display: grid;
     grid-template-areas:
-        /*6 columnas y 4 filas*/
-        'header header header header header header'
+        /*6 columnas y 3 filas*/
         'main main main main main buscador'
         'info info info info info buscador'
-        'footer footer footer footer footer buscador';
-    grid-gap: 10px;
-    padding: 10px;
+        'footer footer footer footer footer footer';
+    background-image: url(../img/fondo.jpg)
 }
 
-.grid-container > div {
-    padding: 10px 3px;
-}
-.grid-container .header{
-    background-color: var(--color-fondo-header);
-    color:var(--color-texto-header);
-    grid-area: header;
-    text-align:left;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-.en-linea{
-    display: inline;
-    vertical-align: middle;
-}
-.hipervinc{
-    font-family: 'Roboto', sans-serif;
-    color: var(--color-texto-header);
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 2em;
+.grid-container .main{
+    margin-left: 5vw;
+    padding: 20px;
+    background-color: rgb(13, 6, 44);
+    /* background-color: var(--primary-color); */
 }
 
-.grid-container .header{
-    grid-area: main;
+.contenedor{
+    margin-bottom: 20px;
 }
-
-
-
-
-.titulo{
-    font-size: 50px;
+.grid-container #reel{
     text-align: center;
-    background-image: url('../Img/AnimeChicaFondoPlaneta.png');
+    border-radius: 20px;
+    overflow: hidden;
+    border: groove 6px rgb(158, 76, 158);
+
+    background-image: url(../img/reel5.jpg);
     background-repeat: no-repeat;
+    background-size:cover;
     background-position: center;
-    color: transparent;
-    background-clip: text; /* (Fonde de Letras)la bandera Dentro de las Letras*/
-    margin: 20px;
-    /* height: 50vh; */
+    height: 65vh;
+    border-radius: 10px;
+    
+    animation-name: cambiar;
+    animation-duration: 25s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
 }
-/*.contenido{ /*Clase*/
-    /* margin: 0 auto; sup inf 0 costados autoajuste */
-    /*padding: 20px;
+#titulo1{
+    padding-bottom: 3px;
     text-align: center;
-}*/
-.gird-container #bloque-1{
-    grid-area: bloque-1;
-    text-align: justify;
-    margin: 30px;
-    height: 20vh;
+    color: rgb(255, 190, 255);
 }
-#galeria-s1{
-    position: relative;
-    left: 10vw;
-    /* z-index: -1; Envia la sección detrás del encabezado */
+#subtitulo{
+    padding-bottom: 3px;
+    text-align: center;
+    color: rgb(255, 190, 255);
+}
+#titulo2{
+    padding-top: 60px;
+    text-align: center;
+    color: rgb(255, 190, 255);
+}
+#cartelera{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    justify-content: center;
 }
 .card{
-    display:inline-block;
-    background-color: rgba(224, 243, 237, 0.1);
-    max-width: 400px;
-    width: 100%;
-    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.6);
-    text-align: center;
-    border-radius: 1%;
-    overflow: hidden;
-}
-.imagen-responsive{
     height: auto;
-    max-width: 100%;
-    display: block;
-}
-#p-bloque3{
-    text-align: justify;
-    margin: 30px;
-}
-footer{
-    background-color: var(--color-fondo-header);
-    color: var(--color-texto-header);
+    box-shadow: 4px 4px 4px 4px black;
     text-align: center;
-    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: groove 6px rgb(158, 76, 158);
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    color: white;
+}
+.imgresponsive{
+    height: auto;
+    height: 360px;
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+.imgresponsive:hover{
+    transform: scale(1.3);
+}
+.card h3{
+    padding: 3px;
+}
+.card h4{
+    padding: 3px;
+    font-weight: lighter;
+}
+
+.grid-container .buscador{
+    width: 100%;
+    height: auto;
+    display: grid;
+    color: rgb(255, 190, 255);
+}
+.buscador form .campo-buscar{
+    margin-top: 23px;
+    padding: 6px 3px 6px 3px;
+    width: 100%;
+    display: block;
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: solid 1px rgb(158, 76, 158);
+    border-radius: 13px;
+    outline: 0px;
+    color: rgb(158, 76, 158);
+    /* background-color: var(--primary-color); */
+}
+
+#info{
+    margin-left: 5vw;
+    padding: 30px; 
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 60px;
+    justify-content: center;
+    color: white;
+    background-color: rgb(13, 6, 44);
+    /* background-color: var(--third-color); */
+}
+
+
+.b-info{
+    height: auto;
+    box-shadow: 4px 4px 4px 4px black;
+    text-align: center;
+    border-radius: 33px;
+    overflow: hidden;
+    border: groove 6px rgb(158, 76, 158);
+    box-sizing: border-box;
+    background-color: var(--third-color);
+    padding: 13px 0px 13px 0px;
+}
+.b-info h3{
+    padding-bottom: 6px;
+}
+.p-i{
+    padding: 3px;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+    #cartelera{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 900px){
+    .contenedor{
+        margin: 0px;
+    }
+    #cartelera{
+        grid-template-columns: 1fr 1fr;
+    }
+    #info{
+        grid-template-columns: 1fr ;
+    }
+    .campo-buscar{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:520px){
+    .contenedor{
+        margin: 0px;
+    }
+    #cartelera{
+        grid-template-columns: 1fr;
+    }
+    #info{
+        grid-template-columns: 1fr;
+    }
+    .campo-buscar{
+        visibility: hidden;
+    }
+}
+@keyframes cambiar{
+    0%{background-image: url(../img/reel1.jpg);}
+    25%{background-image: url(../img/reel2.jpg);}
+    50%{background-image: url(../img/reel3.jpg);}
+    75%{background-image: url(../img/reel4.jpg);}
+    100%{background-image: url(../img/reel5.jpg);}
+}
+
+@font-face {
+    font-family: "alkatra";
+    src: url(../assets/fonts/Alkatra/Alkatra-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "fonstar";
+    src: url(../assets/fonts/fonstars/Fonstars-4Bo0p.otf);
 }
